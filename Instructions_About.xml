@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ff1cbfff">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ff1cbfff"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Memory Burst"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:longClickable="true"
+        android:textStyle="bold"
+        android:textSize="48dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The objective of this game is to test your sight, sound and memory skills.  Memory Burst begins with varied coloured circles that light up individually in a musical theme.  You proceed to touch each circle that was played.  Once you have played the correct pattern your score increments tremendously.  You will then be given the same pattern of lit coloured circles with the same musical tune with an additional lit circle.  As the game continues, it will become more and more challenging.  Once there is an error in the pattern a score will be given, but unfortunately you will have to start from the very beginning.  Try to burst your high score and see how far you can land. Memory Burst is challenging, fun and will further enhance your memory skills."
+        android:id="@+id/textView2"
+        android:layout_weight="0.43" />
+
+    <ImageView
+        android:maxHeight="30px"
+        android:maxWidth="15px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView" />
+
+
+</LinearLayout>
+</ScrollView>
