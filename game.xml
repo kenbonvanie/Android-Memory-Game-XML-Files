@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff1cbfff"
+    android:weightSum="1">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcome"
+            android:id="@+id/welcome"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textStyle="bold" />
+-->
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Score: "
+            android:id="@+id/totalScore"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:layout_alignParentBottom="true"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest Score: "
+            android:id="@+id/highScoreText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="*"
+            android:id="@+id/myTableLayout"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp">
+
+            <TableRow
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/kenred"
+                    android:background="@drawable/roundedbuttonred"
+                    android:alpha="0.2"
+                    android:clickable="true"
+                    android:onClick="onButtonClick" />
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/yellow"
+                    android:background="@drawable/roundedbuttonyellow"
+                    android:alpha="0.2"
+                    android:clickable="true"
+                    android:onClick="onButtonClick" />
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/black"
+                    android:background="@drawable/roundedbutton"
+                    android:alpha="0.2"
+                    android:clickable="true"
+                    android:onClick="onButtonClick" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/blue"
+                    android:background="@drawable/roundedbuttonblue"
+                    android:alpha="0.2"
+                    android:clickable="true"
+                    android:onClick="onButtonClick" />
+
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/green"
+                    android:background="@drawable/roundedbuttongreen"
+                    android:alpha="0.2"
+                    android:clickable="true"
+                    android:onClick="onButtonClick" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
